@@ -1,0 +1,38 @@
+.Sidebar {
+  position: absolute;
+  top: 40%;
+  left: 99%;
+  transform: translate(-99%, -40%);
+  display: flex;
+  flex-direction: column;
+  background-color: #524e4e98;
+  padding: 1em;
+  border-radius: 2em;
+  .icon {
+    margin-top: 1em;
+    font-size: 1.1em;
+    &:hover {
+      animation: icon-shake 0.2s linear;
+      cursor: pointer;
+      color: #b10000;
+    }
+  }
+}
+
+@keyframes icon-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
