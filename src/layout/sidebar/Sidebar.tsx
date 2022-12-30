@@ -15,7 +15,7 @@ const Sidebar: React.FC = () => {
   return (
     <nav className="Sidebar">
       {/* Landing Page */}
-      <FontAwesomeIcon className="icon" icon={faHome} />
+      <FontAwesomeIcon className="icon active" icon={faHome} />
       {/* About Details */}
       <FontAwesomeIcon className="icon" icon={faCircleUser} />
       {/* Projects */}

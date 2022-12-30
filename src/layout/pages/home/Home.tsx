@@ -4,19 +4,22 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
 import Blog from "./components/Blog";
-import About from "../about/About";
+import Resume from "./components/Resume";
 
 import "./home.scss";
+import Project from "./components/Project";
 
 const Home: React.FC = () => {
   return (
     <div className="Home">
       {/* Hero page */}
       <Hero />
-      {/* Projects */}
+      {/* Work */}
       <Work />
       {/* About */}
-      <About />
+      <Resume />
+      {/* Projects */}
+      <Project />
       {/* Contact */}
       <Contact />
       {/* Blog */}

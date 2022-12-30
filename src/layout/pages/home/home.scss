@@ -58,4 +58,71 @@
       align-items: center;
     }
   }
+  .Resume {
+    // background-color: #311e1e;
+    width: 90%;
+    margin: 7em auto;
+    h1 {
+      color: #880707;
+    }
+    .info {
+      margin-top: 3em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .personal-info {
+        .list {
+          margin-top: 2em;
+          text-align: start;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          list-style: none;
+          padding: none;
+          .list-item {
+            margin: 1em 0;
+            .title {
+              font-size: 1.2em;
+              font-weight: 800;
+            }
+            a {
+              text-decoration: none;
+              color: #474444;
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+        .button {
+          margin: 0 auto;
+        }
+      }
+    }
+    .background {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .Projects-section {
+    width: 70%;
+    margin: 10em auto;
+    .title-topButton {
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+      align-items: center;
+      .title {
+        width: 45%;
+        h1 {
+          color: #880707;
+        }
+      }
+    }
+    .projects-wrapper {
+      margin-top: 4em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // background-color: darkblue;
+      row-gap: 4em;
+    }
+  }
 }
