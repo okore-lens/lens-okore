@@ -1,12 +1,23 @@
-import React from "react";
+import React, { ReactNode, useState } from "react";
 
 import image from "../../assets/me.jpeg";
+import Modal from "../../UI/Modal";
 
 import "./blogcard.scss";
 
-const BlogCard: React.FC = () => {
+interface BlogCardProps {
+  onClick: () => void;
+}
+
+const BlogCard: React.FC<BlogCardProps> = (props) => {
+  const clickHandler = () => {
+    props.onClick();
+  };
+
   return (
-    <div className="BlogCard">
+    <div className="BlogCard" onClick={clickHandler}>
+      {/* Modal Overlay */}
+
       <div className="overlay">
         <p>Read more ...</p>
       </div>
