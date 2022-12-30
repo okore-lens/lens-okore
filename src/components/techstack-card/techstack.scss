@@ -1,0 +1,69 @@
+.work-card {
+  height: 450px;
+  width: 400px;
+  background-color: #3a3434;
+  border-radius: 1em;
+  display: grid;
+  grid-template-rows: 3fr 2fr 2fr 2fr;
+  text-align: start;
+  padding: 2em;
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      font-size: 6em;
+    }
+  }
+  .button {
+    border: none;
+    width: max-content;
+    height: max-content;
+    position: relative;
+
+    &:hover {
+      background-color: transparent;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+  &:hover {
+    background-color: #f500002f;
+    .icon:nth-child(1) {
+      animation: icon-shake 0.2s linear;
+    }
+  }
+}
+
+@keyframes icon-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

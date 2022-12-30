@@ -2,12 +2,18 @@ import React from "react";
 
 import image from "../../../../assets/me.jpeg";
 import Button from "../../../../components/button/Button";
-import { faHSquare } from "@fortawesome/free-solid-svg-icons";
+
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const Hero: React.FC = () => {
   // function truncate(str: string, n: number) {
   //   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   // }
+
+  const aboutClickHandler = () => {
+    console.log("Clicked!");
+  };
+
   return (
     <section className="Hero">
       <div className="wrapper">
@@ -30,7 +36,11 @@ const Hero: React.FC = () => {
               molestias unde sit dolores eveniet possimus voluptatum?
             </p>
           </div>
-          <Button text="Button Name" buttonIcon={faHSquare} />
+          <Button
+            text="Read More"
+            buttonIcon={faRocket}
+            click={aboutClickHandler}
+          />
         </section>
       </div>
     </section>
