@@ -125,4 +125,77 @@
       row-gap: 4em;
     }
   }
+  .Contact {
+    width: 70%;
+    margin: 10em auto;
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      text-align: start;
+      width: 100%;
+      gap: 2em;
+      height: max-content;
+      .left {
+        p:nth-child(1) {
+          color: #363636;
+        }
+        h4 {
+          margin: 0.1em;
+        }
+        .SocialCard {
+          margin: 3em 0;
+          width: max-content;
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 3em;
+          justify-content: space-between;
+          align-items: center;
+          .icon {
+            font-size: 5em;
+          }
+        }
+      }
+      .right {
+        height: 100%;
+        display: flex;
+        // align-items: center;
+        padding-top: 3em;
+        justify-content: center;
+        // background-color: #8f5202;
+
+        form {
+          // background-color: aqua;
+          width: 80%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          input {
+            height: 3em;
+            border-radius: 1em;
+            border: none;
+            padding: 1em;
+          }
+          textarea {
+            min-height: 9em;
+            border-radius: 1em;
+            padding: 1em;
+          }
+          .button {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+  }
+  .Blog {
+    width: 70%;
+    margin: 10em auto;
+    .blog-wrapper {
+      margin-top: 4em;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2em;
+    }
+  }
 }
