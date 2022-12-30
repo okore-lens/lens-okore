@@ -1,25 +1,17 @@
-import { useState } from "react";
-import Blog from "./components/blog/Blog";
+import React from "react";
+
+import Home from "./layout/pages/home/Home";
 
 import "./App.scss";
-import Sidebar from "./components/sidebar/Sidebar";
+import Sidebar from "./layout/sidebar/Sidebar";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Developing my Portfolio using React Ts</h1>
-      {/* Side Navigation */}
       <Sidebar />
-      {/* Hero page */}
-      {/* Projects */}
-      {/* About */}
-      {/* Contact */}
-      {/* Blog */}
-      <Blog />
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

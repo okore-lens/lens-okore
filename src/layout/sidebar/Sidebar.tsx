@@ -11,7 +11,7 @@ import {
 
 import "./sidebar.scss";
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <nav className="Sidebar">
       {/* Landing Page */}
