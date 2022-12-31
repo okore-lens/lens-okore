@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
             <FontAwesomeIcon className="icon" icon={faPhoneVolume} />
             <div className="text">
               <p>Call Me</p>
-              <p>Nairobi,Kenya</p>
+              <p>+25471601042</p>
             </div>
           </section>
         </section>

@@ -1,16 +1,22 @@
-import React, { ReactNode, useState } from "react";
-
-import image from "../../assets/me.jpeg";
-import Modal from "../../UI/Modal";
+import React, { Dispatch, SetStateAction } from "react";
 
 import "./blogcard.scss";
 
 interface BlogCardProps {
   onClick: () => void;
+  title: string;
+  textBody: string;
+  image: string;
+  setMoreInfo: Dispatch<SetStateAction<any>>;
 }
 
 const BlogCard: React.FC<BlogCardProps> = (props) => {
   const clickHandler = () => {
+    props.setMoreInfo({
+      image: props.image,
+      title: props.title,
+      bodyText: props.textBody,
+    });
     props.onClick();
   };
 
@@ -23,11 +29,11 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
       </div>
       {/* Image */}
       <div className="image">
-        <img src={image} />
+        <img src={props.image} />
       </div>
       <hr />
       {/* Title */}
-      <h2>Title</h2>
+      <h2>{props.title}</h2>
       {/* body */}
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
