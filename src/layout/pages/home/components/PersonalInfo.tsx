@@ -1,6 +1,17 @@
 import React from "react";
 
-import { faDochub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDochub,
+  faReact,
+  faAngular,
+  faJs,
+  faHtml5,
+  faSass,
+  faPhp,
+  faNodeJs,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Button from "../../../../components/button/Button";
 
@@ -48,6 +59,54 @@ const PersonalInfo: React.FC = () => {
           <span className="title">Languages :: </span>English,Kiswahili
         </li>
       </ul>
+      <div className="brands">
+        <div className="gallery">
+          <div className="carousel">
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "#31b0e2" }}
+                icon={faReact}
+              />
+            </figure>
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "#df2108" }}
+                icon={faAngular}
+              />
+            </figure>
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "#45b145" }}
+                icon={faNode}
+              />
+            </figure>
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "green" }}
+                icon={faHtml5}
+              />
+            </figure>
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "#880707" }}
+                icon={faSass}
+              />
+            </figure>
+            <figure>
+              <FontAwesomeIcon
+                className="icon"
+                style={{ color: "#343570" }}
+                icon={faPhp}
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
       <Button
         className="button"
         text="Download Resume"
