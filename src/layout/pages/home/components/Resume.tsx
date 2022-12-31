@@ -8,7 +8,6 @@ import Wakatime from "./Wakatime";
 const Resume: React.FC = () => {
   return (
     <div className="Resume">
-      {/* <h1>My Resume</h1> */}
       <section className="info">
         <PersonalInfo />
         <div className="numerical-data">
@@ -16,9 +15,7 @@ const Resume: React.FC = () => {
           <Wakatime />
         </div>
       </section>
-      {/* <section className="skills">
-        <h1>Skills</h1>
-      </section> */}
+
       <section className="background">
         <div className="experience">
           <h1>Experience</h1>
