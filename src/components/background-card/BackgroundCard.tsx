@@ -23,16 +23,36 @@ const BackgroundCard: React.FC = () => {
           <h5>Station</h5>
         </div>
         {/* Description */}
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
-          eos odio quisquam voluptatum obcaecati ab rem non molestias libero
-          tempore, fugiat delectus reiciendis itaque magni, accusantium, ullam
-          provident. Architecto accusantium iusto aspernatur voluptates
-          dignissimos, beatae saepe assumenda facilis laborum. Exercitationem
-          sint ipsum eaque repellendus veritatis, nisi, non rem libero facilis
-          ducimus in optio quae! Atque facilis quasi nesciunt tempore temporibus
-          quidem corrupti in id ad officiis.
-        </p>
+        <ul>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa unde
+            eos odio quisquam voluptatum obcaecati ab rem non molestias libero
+          </li>
+        </ul>
         {/* Accomplishments */}
         <div className="accomplishments">
           <h4>Key Moments</h4>

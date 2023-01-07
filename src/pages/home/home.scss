@@ -42,6 +42,17 @@
             text-align: start;
           }
         }
+        .media-links {
+          display: flex;
+          justify-content: space-around;
+          a {
+            margin: 0 0.5em;
+            color: #ffffff;
+            &:hover {
+              color: #880707;
+            }
+          }
+        }
       }
     }
   }

@@ -1,13 +1,12 @@
 import React from "react";
-
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Work from "./components/Work";
-import Blog from "./components/Blog";
-import Resume from "./components/Resume";
+import Contact from "../../sections/homeSection/Contact";
+import Hero from "../../sections/homeSection/Hero";
+import Project from "../../sections/homeSection/Project";
+import Resume from "../../sections/homeSection/Resume";
+import Work from "../../sections/homeSection/Work";
+import Blog from "../../sections/homeSection/Blog";
 
 import "./home.scss";
-import Project from "./components/Project";
 
 const Home: React.FC = () => {
   return (

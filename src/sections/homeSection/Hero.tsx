@@ -1,9 +1,12 @@
 import React from "react";
 
-import image from "../../../../assets/me.jpeg";
-import Button from "../../../../components/button/Button";
-
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import image from "../../assets/me.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Hero: React.FC = () => {
   // function truncate(str: string, n: number) {
@@ -36,11 +39,20 @@ const Hero: React.FC = () => {
               molestias unde sit dolores eveniet possimus voluptatum?
             </p>
           </div>
-          <Button
-            text="Read More"
-            buttonIcon={faRocket}
-            click={aboutClickHandler}
-          />
+          <div className="media-links">
+            <a
+              href="https://www.linkedin.com/in/lens-okore-054b15223/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+            <a href="https://github.com/okore-lens" target="_blank">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://twitter.com/infinite_lens" target="_blank">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </div>
         </section>
       </div>
     </section>

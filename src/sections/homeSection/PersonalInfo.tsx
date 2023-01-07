@@ -13,7 +13,7 @@ import {
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Button from "../../../../components/button/Button";
+import Button from "../../components/button/Button";
 
 const PersonalInfo: React.FC = () => {
   const clickHandler = () => {

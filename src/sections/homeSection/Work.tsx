@@ -1,8 +1,6 @@
 import React from "react";
-
-import TechStack from "../../../../components/techstack-card/TechStack";
-
-import WorkArray from "../../../../data/work";
+import TechStack from "../../components/techstack-card/TechStack";
+import WorkArray from "../../data/work";
 
 const Work: React.FC = () => {
   return (

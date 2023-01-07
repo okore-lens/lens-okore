@@ -1,7 +1,7 @@
 import React from "react";
+import BackgroundCard from "../../components/background-card/BackgroundCard";
 
-import BackgroundCard from "../../../../components/background-card/BackgroundCard";
-import Button from "../../../../components/button/Button";
+import Button from "../../components/button/Button";
 import PersonalInfo from "./PersonalInfo";
 import Wakatime from "./Wakatime";
 

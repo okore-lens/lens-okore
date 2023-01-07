@@ -12,7 +12,7 @@
     margin-top: 1em;
     font-size: 1.2em;
     &:hover {
-      animation: icon-shake 0.2s linear;
+      animation: icon-shake 0.8s linear;
       cursor: pointer;
       color: #b10000;
     }
@@ -24,18 +24,18 @@
 
 @keyframes icon-shake {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   25% {
-    transform: translateX(5px);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateX(-5px);
+    transform: translateY(-5px);
   }
   75% {
-    transform: translateX(5px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
