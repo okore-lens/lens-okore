@@ -75,6 +75,7 @@ const Project: React.FC = () => {
           </p>
         </div>
         <Button
+          className="button"
           click={clickHandler}
           buttonIcon={faScrewdriverWrench}
           text="View All"

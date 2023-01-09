@@ -56,9 +56,10 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         <div className="right">
           <h4>Tech Stack</h4>
           <div className="languages">
-            {props.stack.map((lan, idx) => (
+            Icons go here
+            {/* {props.stack.map((lan, idx) => (
               <FontAwesomeIcon key={idx} className="icon" icon={lan} />
-            ))}
+            ))} */}
           </div>
         </div>
       </section>

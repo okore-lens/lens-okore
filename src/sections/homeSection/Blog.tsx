@@ -39,7 +39,6 @@ const Blog: React.FC = () => {
         });
       }
       setBlogs(loadedBlogs);
-      console.log(blogs);
     } catch (error) {
       console.log(error);
     }

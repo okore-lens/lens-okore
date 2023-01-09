@@ -20,9 +20,9 @@ const Home: React.FC = () => {
       {/* Projects */}
       <Project />
       {/* Contact */}
-      <Contact />
+      {/* <Contact /> */}
       {/* Blog */}
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };

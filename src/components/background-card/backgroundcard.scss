@@ -29,16 +29,23 @@
       margin-top: 0.6em;
       h3 {
         margin: 0;
-        font-size: 1em;
+        font-size: 0.7em;
       }
     }
     .title-station {
-      width: max-content;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-around;
       align-items: center;
+      h3 {
+        margin: 0;
+        color: #5c1313;
+      }
       .icon {
-        margin: 1em;
+        margin: 0.7em;
+      }
+      h5 {
+        color: #585858;
       }
     }
     .accomplishments {
@@ -48,6 +55,26 @@
         grid-template-columns: 1fr 1fr;
         li {
           margin: 0.3em 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background-card {
+    .right {
+      .timeline {
+        h3 {
+          font-size: 0.7em;
+        }
+      }
+      .title-station {
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        .icon {
+          display: none;
         }
       }
     }

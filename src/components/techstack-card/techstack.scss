@@ -1,6 +1,5 @@
 .work-card {
-  height: 450px;
-  width: 400px;
+  height: 50vh;
   background-color: #3a3434;
   border-radius: 1em;
   display: grid;
@@ -62,5 +61,16 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work-card {
+    .button {
+      text-decoration: underline;
+    }
+    &:hover {
+      background-color: #3a3434;
+    }
   }
 }
