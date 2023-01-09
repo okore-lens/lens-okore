@@ -29,27 +29,29 @@ const Contact: React.FC = () => {
             ab cupiditate sequi officiis odio libero placeat provident quia ad
             hic.
           </p>
-          <section className="SocialCard">
-            <FontAwesomeIcon className="icon" icon={faLandmark} />
-            <div className="text">
-              <p>Address Point</p>
-              <p>Nairobi,Kenya</p>
-            </div>
-          </section>
-          <section className="SocialCard">
-            <FontAwesomeIcon className="icon" icon={faMailchimp} />
-            <div className="text">
-              <p>Mail Me</p>
-              <p>okorelens27@gmail.com</p>
-            </div>
-          </section>
-          <section className="SocialCard">
-            <FontAwesomeIcon className="icon" icon={faPhoneVolume} />
-            <div className="text">
-              <p>Call Me</p>
-              <p>+25471601042</p>
-            </div>
-          </section>
+          <div className="SocialCardWrappers">
+            <section className="SocialCard">
+              <FontAwesomeIcon className="icon" icon={faLandmark} />
+              <div className="text">
+                <p>Address Point</p>
+                <p>Nairobi,Kenya</p>
+              </div>
+            </section>
+            <section className="SocialCard">
+              <FontAwesomeIcon className="icon" icon={faMailchimp} />
+              <div className="text">
+                <p>Mail Me</p>
+                <p>okorelens27@gmail.com</p>
+              </div>
+            </section>
+            <section className="SocialCard">
+              <FontAwesomeIcon className="icon" icon={faPhoneVolume} />
+              <div className="text">
+                <p>Call Me</p>
+                <p>+25471601042</p>
+              </div>
+            </section>
+          </div>
         </section>
         <section className="right">
           <form>

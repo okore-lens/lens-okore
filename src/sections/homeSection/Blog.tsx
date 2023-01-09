@@ -1,5 +1,7 @@
+import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import BlogCard from "../../components/blog-card/BlogCard";
+import Button from "../../components/button/Button";
 import ModalBody from "../../components/modalBody/ModalBody";
 import blogArray from "../../data/blog";
 import Modal from "../../UI/Modal";
@@ -50,7 +52,25 @@ const Blog: React.FC = () => {
 
   return (
     <div className="Blog">
-      <h1>My Blog</h1>
+      {/* Top Strip */}
+      <div className="title-topButton">
+        <div className="title">
+          <h1>My Blog </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dicta
+            tenetur doloremque aut error, porro, obcaecati, uae.
+          </p>
+        </div>
+        <Button
+          className="button"
+          click={() => {
+            console.log("Clicked");
+          }}
+          buttonIcon={faScrewdriverWrench}
+          text="View All"
+        />
+      </div>
+
       <div className="blog-wrapper">
         {showModal && (
           <Modal onClose={closeModalHandler}>
