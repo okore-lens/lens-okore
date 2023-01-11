@@ -7,6 +7,7 @@ import Button from "../../components/button/Button";
 import projectsArray from "../../data/project";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { Link } from "react-router-dom";
 
 const Project: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -74,12 +75,17 @@ const Project: React.FC = () => {
             tenetur doloremque aut error, porro, obcaecati, uae.
           </p>
         </div>
-        <Button
-          className="button"
-          click={clickHandler}
-          buttonIcon={faScrewdriverWrench}
-          text="View All"
-        />
+        <Link
+          to="/projects"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <Button
+            className="button"
+            click={clickHandler}
+            buttonIcon={faScrewdriverWrench}
+            text="View All"
+          />
+        </Link>
       </div>
       {/* Project Cards */}
       <div className="projects-wrapper">

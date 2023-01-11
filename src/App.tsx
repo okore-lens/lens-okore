@@ -1,15 +1,13 @@
 import React from "react";
 
-import Home from "./pages/home/Home";
-
 import "./App.scss";
-import Sidebar from "./layout/sidebar/Sidebar";
-import LayoutIndex from "./layout/LayoutIndex";
+
+import Router from "./routes";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <LayoutIndex />
+      <Router />
     </div>
   );
 };

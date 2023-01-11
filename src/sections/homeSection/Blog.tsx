@@ -1,5 +1,6 @@
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import BlogCard from "../../components/blog-card/BlogCard";
 import Button from "../../components/button/Button";
 import ModalBody from "../../components/modalBody/ModalBody";
@@ -61,14 +62,14 @@ const Blog: React.FC = () => {
             tenetur doloremque aut error, porro, obcaecati, uae.
           </p>
         </div>
-        <Button
-          className="button"
-          click={() => {
-            console.log("Clicked");
-          }}
-          buttonIcon={faScrewdriverWrench}
-          text="View All"
-        />
+        <Link to="/blogs" style={{ textDecoration: "none", color: "inherit" }}>
+          <Button
+            className="button"
+            click={clickHandler}
+            buttonIcon={faScrewdriverWrench}
+            text="View All"
+          />
+        </Link>
       </div>
 
       <div className="blog-wrapper">
