@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import Button from "../../components/button/Button";
+import { Icon } from "@iconify/react";
 
 const PersonalInfo: React.FC = () => {
   const clickHandler = () => {
@@ -63,46 +64,62 @@ const PersonalInfo: React.FC = () => {
         <div className="gallery">
           <div className="carousel">
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "#31b0e2" }}
-                icon={faReact}
-              />
+              <div className="icon">
+                <Icon
+                  icon="logos:react"
+                  style={{ color: "#31b0e2", fontSize: "4em" }}
+                />
+              </div>
             </figure>
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "#df2108" }}
-                icon={faAngular}
-              />
+              <div className="icon">
+                <Icon
+                  icon="vscode-icons:file-type-angular"
+                  style={{ color: "#df2108", fontSize: "4em" }}
+                />
+              </div>
             </figure>
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "#45b145" }}
-                icon={faNode}
-              />
+              <div className="icon">
+                <Icon
+                  icon="fa6-brands:node"
+                  style={{ color: "#45b145", fontSize: "4em" }}
+                />
+              </div>
             </figure>
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "green" }}
-                icon={faHtml5}
-              />
+              <div className="icon">
+                <Icon
+                  icon="logos:typescript-icon"
+                  style={{ fontSize: "4em" }}
+                />
+              </div>
             </figure>
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "#880707" }}
-                icon={faSass}
-              />
+              <div className="icon">
+                <Icon
+                  icon="faSaion:logo-sassss"
+                  style={{ color: "#880707", fontSize: "4em" }}
+                />
+              </div>
             </figure>
             <figure>
-              <FontAwesomeIcon
-                className="icon"
-                style={{ color: "#343570" }}
-                icon={faPhp}
-              />
+              <div className="icon">
+                <Icon
+                  icon="mdi:language-php"
+                  style={{ color: "#343570", fontSize: "4em" }}
+                  className="icon"
+                />
+              </div>
+            </figure>
+            <figure>
+              <div className="icon">
+                <Icon
+                  icon="fluent:javascript-16-filled"
+                  style={{ color: "yellow", fontSize: "4em" }}
+                  className="icon"
+                />
+              </div>
             </figure>
           </div>
         </div>

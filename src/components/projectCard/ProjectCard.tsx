@@ -1,16 +1,23 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Dispatch, SetStateAction } from "react";
 
-import image from "../../assets/me.jpeg";
+import {
+  faAngular,
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faReact,
+  faSass,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./projectcard.scss";
+import { Icon } from "@iconify/react";
 
 interface ProjectCardProps {
   title: string;
   bodyText: string;
-  stack: Array<IconProp>;
+  stack: Array<string>;
   websiteUrl: string;
   githubUrl: string;
   image: string;
@@ -54,12 +61,10 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           </div>
         </div>
         <div className="right">
-          <h4>Tech Stack</h4>
           <div className="languages">
-            Icons go here
-            {/* {props.stack.map((lan, idx) => (
-              <FontAwesomeIcon key={idx} className="icon" icon={lan} />
-            ))} */}
+            {props.stack.map((lan, idx) => (
+              <Icon key={idx} className="icon" icon={lan} />
+            ))}
           </div>
         </div>
       </section>

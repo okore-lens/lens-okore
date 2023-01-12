@@ -1,6 +1,6 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faMultiply } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Icon } from "@iconify/react";
 import React from "react";
 import Button from "../button/Button";
 
@@ -10,7 +10,7 @@ interface BodyProps {
   image: string;
   title: string;
   bodyText: string;
-  stack?: Array<IconProp>;
+  stack?: Array<string>;
 }
 
 interface ModalBodyProps {
@@ -32,8 +32,8 @@ const ModalBody: React.FC<ModalBodyProps> = (props) => {
         <div className="title">
           <h2>{props.body.title}</h2>
           <div className="icons">
-            {props.body.stack?.map((icon, idx) => (
-              <FontAwesomeIcon className="icon" key={idx} icon={icon} />
+            {props.body.stack?.map((lan, idx) => (
+              <Icon key={idx} className="icon" icon={lan} />
             ))}
           </div>
         </div>

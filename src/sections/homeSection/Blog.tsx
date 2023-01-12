@@ -1,4 +1,4 @@
-import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BlogCard from "../../components/blog-card/BlogCard";
@@ -66,7 +66,7 @@ const Blog: React.FC = () => {
           <Button
             className="button"
             click={clickHandler}
-            buttonIcon={faScrewdriverWrench}
+            buttonIcon={faBook}
             text="View All"
           />
         </Link>

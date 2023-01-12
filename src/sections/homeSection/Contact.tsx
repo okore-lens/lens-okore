@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { faMailchimp } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -9,11 +9,38 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Button from "../../components/button/Button";
+import emailjs from "@emailjs/browser";
+import { send } from "emailjs-com";
 
 const Contact: React.FC = () => {
-  const clickHandler = () => {
-    console.log("Message Sent");
+  const [formInputs, setFormInputs] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const changeHandler = (ev: { target: { name: any; value: any } }) => {
+    setFormInputs({ ...formInputs, [ev.target.name]: ev.target.value });
   };
+
+  const clickHandler = (ev: { preventDefault: () => void }) => {
+    ev.preventDefault();
+    send("service_tpfpqkl", "template_ioz6ifx", formInputs, "yySSC3OYij-nR0TpB")
+      .then((response) => {
+        alert("Message sent successfully");
+        setFormInputs({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        alert("Message not sent");
+      });
+  };
+
   return (
     <div className="Contact">
       <h1>Get In Touch</h1>
@@ -54,32 +81,46 @@ const Contact: React.FC = () => {
           </div>
         </section>
         <section className="right">
-          <form>
+          <form onSubmit={clickHandler}>
             <input
               type="text"
               name="name"
               className="name"
+              value={formInputs.name}
               placeholder="Your Name"
+              onChange={changeHandler}
+              required
             />
             <input
               type="text"
               name="email"
               className="name"
               placeholder="Your Email"
+              value={formInputs.email}
+              onChange={changeHandler}
+              required
             />
             <input
               type="text"
               name="subject"
               className="subject"
               placeholder="Your Subject"
+              value={formInputs.subject}
+              onChange={changeHandler}
+              required
             />
-            <textarea name="message" className="message"></textarea>
-            <Button
-              className="button"
-              buttonIcon={faPaperPlane}
-              text="Send Message"
-              click={clickHandler}
+            <textarea
+              name="message"
+              className="message"
+              placeholder="message"
+              value={formInputs.message}
+              onChange={changeHandler}
+              required
             />
+            <button className="button">
+              <p>Send Message</p>
+              <FontAwesomeIcon className="icon" icon={faPaperPlane} />
+            </button>
           </form>
         </section>
       </div>
