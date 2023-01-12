@@ -65,7 +65,7 @@ const Blog: React.FC = () => {
         <Link to="/blogs" style={{ textDecoration: "none", color: "inherit" }}>
           <Button
             className="button"
-            click={clickHandler}
+            click={() => console.log("clicked")}
             buttonIcon={faBook}
             text="View All"
           />

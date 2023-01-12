@@ -14,8 +14,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const buttonClickHandler = (ev: { preventDefault: () => void }) => {
-    ev.preventDefault();
+  const buttonClickHandler = () => {
     props.click();
   };
 

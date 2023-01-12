@@ -30,12 +30,12 @@ const TechStack: React.FC<TechStackProps> = (props) => {
       {/* Little Description */}
       <p>{props.description}</p>
       {/* Button */}
-      <Button
+      {/* <Button
         text="Know More"
         click={clickHander}
         buttonIcon={faArrowCircleRight}
         className="button"
-      />
+      /> */}
     </div>
   );
 };

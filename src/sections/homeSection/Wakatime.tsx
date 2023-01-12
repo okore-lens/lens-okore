@@ -5,7 +5,7 @@ const Wakatime: React.FC = () => {
     <section className="Wakatime">
       <div className="figure">
         <figure>
-          <embed src="https://wakatime.com/share/@dev_okore/cae6de7c-b9e0-4f7a-9d5b-1d242558b5ba.svg"></embed>
+          <embed src="https://wakatime.com/share/@dev_okore/0b9c5d37-9c8b-4bab-8849-e14b50fcf77a.svg"></embed>
         </figure>
       </div>
     </section>

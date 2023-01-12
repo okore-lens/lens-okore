@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       {/* Hero page */}
       <Hero />
       {/* Work */}
-      {/* <Work   /> */}
+      <Work />
       {/* About */}
       <Resume />
       {/* Projects */}

@@ -28,15 +28,15 @@ const Hero: React.FC = () => {
         </section>
         {/* right */}
         <section className="right">
-          <h1>Okore Lens William</h1>
-          {/* text */}
           <div className="text">
+            <h1>Hello I'm Okore</h1>
+            <h2>Software Developer</h2>
+
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Temporibus quia sequi aut ullam atque adipisci saepe aliquam
-              mollitia dignissimos perspiciatis, eius enim facilis nulla
-              excepturi magnam, reiciendis cum asperiores accusantium! Similique
-              molestias unde sit dolores eveniet possimus voluptatum?
+              <span> &lt;&gt;</span> <br />
+              &nbsp;&nbsp; Softare Developer <br />
+              &nbsp;&nbsp; Softare Designer <br />
+              <span> &lt;/&gt;</span>
             </p>
           </div>
           <div className="media-links">

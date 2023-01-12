@@ -26,18 +26,18 @@ const PersonalInfo: React.FC = () => {
       <h1>Personal Details</h1>
       <ul className="list">
         <li className="list-item">
-          <span className="title">First Name :: </span>Lens
+          <span className="title">Name :: </span>Lens Okore
         </li>
-        <li className="list-item">
+        {/* <li className="list-item">
           <span className="title">Surname :: </span> Okore
-        </li>
+        </li> */}
         <li className="list-item">
           <span className="title">Email :: </span>
           okorelens27@gmail.com
         </li>
-        <li className="list-item">
+        {/* <li className="list-item">
           <span className="title">Age :: </span>20
-        </li>
+        </li> */}
         <li className="list-item">
           <span className="title">Address :: </span> Nairobi,Kenya
         </li>
@@ -98,7 +98,7 @@ const PersonalInfo: React.FC = () => {
             <figure>
               <div className="icon">
                 <Icon
-                  icon="faSaion:logo-sassss"
+                  icon="logos:sass"
                   style={{ color: "#880707", fontSize: "4em" }}
                 />
               </div>

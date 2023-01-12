@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Icon } from "@iconify/react";
 import React from "react";
 import Button from "../button/Button";
+import text from "../../data/text";
 
 import "./modalbody.scss";
 
@@ -37,10 +38,11 @@ const ModalBody: React.FC<ModalBodyProps> = (props) => {
             ))}
           </div>
         </div>
-        <p>{props.body.bodyText}</p>
-        <p>{props.body.bodyText}</p>
-        <p>{props.body.bodyText}</p>
-        <p>{props.body.bodyText}</p>
+        <p>{text}</p>
+        <p>{text}</p>
+        <p>{text}</p>
+        <p>{text}</p>
+        <p>{text}</p>
       </div>
       <Button
         className="button"

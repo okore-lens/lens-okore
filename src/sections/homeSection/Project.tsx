@@ -4,9 +4,7 @@ import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import Modal from "../../UI/Modal";
 import ModalBody from "../../components/modalBody/ModalBody";
 import Button from "../../components/button/Button";
-import projectsArray from "../../data/project";
 import ProjectCard from "../../components/projectCard/ProjectCard";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Link } from "react-router-dom";
 
 const Project: React.FC = () => {
@@ -18,10 +16,6 @@ const Project: React.FC = () => {
     stack: [],
   });
   const [projs, setProjs] = useState<any>([]);
-
-  const clickHandler = () => {
-    console.log("View More Projects");
-  };
 
   const closeModalHandler = () => {
     setShowModal(false);
@@ -81,7 +75,7 @@ const Project: React.FC = () => {
         >
           <Button
             className="button"
-            click={clickHandler}
+            click={() => console.log("Projects Clicked")}
             buttonIcon={faScrewdriverWrench}
             text="View All"
           />

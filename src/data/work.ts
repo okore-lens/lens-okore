@@ -13,19 +13,22 @@ interface WorkItemProps {
 
 const WorkArray: Array<WorkItemProps> = [
   {
-    title: "Server Development",
-    description: "Some text that I would probably never know about",
-    icon: faServer,
-  },
-  {
     title: "Web Development",
-    description: "Some text that I would probably never know about",
+    description:
+      "Highly responsive and scallable web appliations that use new technologies",
     icon: faCode,
   },
   {
     title: "Mobile Development",
-    description: "Some text that I would probably never know about",
+    description:
+      "Developing both iOS and Android applications that are of high standards",
     icon: faMobileAndroid,
+  },
+  {
+    title: "Server Development",
+    description:
+      "Secure and robust servers that can serve both small and large scale organisations",
+    icon: faServer,
   },
 ];
 
