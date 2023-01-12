@@ -63,21 +63,23 @@ const Blog = (props: Props) => {
         <div className="title">MY BLOGS</div>
         <Link to="/">Back To Home</Link>
       </div>
-      {blogs.map(
-        (
-          blog: { title: string; image: string; text: string },
-          idx: React.Key | null | undefined
-        ) => (
-          <BlogCard
-            key={idx}
-            title={blog.title}
-            image={blog.image}
-            textBody={blog.text}
-            onClick={clickHandler}
-            setMoreInfo={setMoreInfo}
-          />
-        )
-      )}
+      <div className="wrapper">
+        {blogs.map(
+          (
+            blog: { title: string; image: string; text: string },
+            idx: React.Key | null | undefined
+          ) => (
+            <BlogCard
+              key={idx}
+              title={blog.title}
+              image={blog.image}
+              textBody={blog.text}
+              onClick={clickHandler}
+              setMoreInfo={setMoreInfo}
+            />
+          )
+        )}
+      </div>
     </div>
   );
 };

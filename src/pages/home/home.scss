@@ -51,6 +51,9 @@
           }
           p {
             color: #817c7c;
+            span {
+              color: #ff0000;
+            }
           }
         }
         .media-links {
@@ -58,9 +61,9 @@
           justify-content: space-around;
           a {
             margin: 0 0.5em;
-            color: #ffffff;
+            color: #ff0000;
             &:hover {
-              color: #ff0000;
+              color: #ffffff;
             }
           }
         }
@@ -68,7 +71,8 @@
     }
   }
   .Work {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     .work-cards-wrapper {
       width: 90%;
       margin: 0 auto;
@@ -78,7 +82,7 @@
     }
   }
   .Resume {
-    width: 90%;
+    width: 60%;
     margin: 7em auto;
     h1 {
       color: #ff0000;
@@ -198,13 +202,12 @@
     }
   }
   .Projects-section {
-    width: 70%;
+    width: 60%;
     margin: 10em auto;
     .title-topButton {
       display: flex;
       justify-content: space-between;
       text-align: start;
-      // align-items: center;
       .title {
         width: 45%;
         h1 {
@@ -214,15 +217,15 @@
       }
     }
     .projects-wrapper {
+      width: 100%;
       margin-top: 2em;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 4em;
     }
   }
   .Contact {
-    width: 70%;
+    width: 60%;
     margin: 10em auto;
     h1 {
       color: #ff0000;
@@ -261,7 +264,6 @@
       .right {
         height: 100%;
         display: flex;
-
         padding-top: 3em;
         justify-content: center;
 
@@ -319,13 +321,12 @@
     }
   }
   .Blog {
-    width: 70%;
-    margin: 10em auto;
+    width: 60%;
+    margin: 10em auto 3em auto;
     .title-topButton {
       display: flex;
       justify-content: space-between;
       text-align: start;
-      // align-items: center;
       .title {
         width: 45%;
         h1 {
@@ -337,8 +338,8 @@
     .blog-wrapper {
       margin-top: 4em;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2em;
+      grid-template-columns: 1fr 1fr;
+      gap: 4em;
     }
   }
 }
@@ -411,13 +412,13 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
   .Home {
     .Projects-section {
-      width: 100%;
+      width: 80%;
     }
     .Blog {
-      width: 100%;
+      width: 80%;
     }
   }
 }
@@ -446,13 +447,13 @@
       }
     }
     .Resume {
+      width: 100%;
       .info {
         grid-template-columns: 1fr;
         height: max-content;
       }
     }
     .Contact {
-      width: 100%;
       .contact-wrapper {
         grid-template-columns: 1fr;
         .left {
@@ -551,6 +552,9 @@
       .projects-wrapper {
         grid-template-columns: 1fr;
       }
+    }
+    .Contact {
+      width: 90%;
     }
     .Blog {
       .title-topButton {

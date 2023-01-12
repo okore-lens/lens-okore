@@ -58,8 +58,8 @@ const Blog: React.FC = () => {
         <div className="title">
           <h1>My Blog </h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dicta
-            tenetur doloremque aut error, porro, obcaecati, uae.
+            This is an open club to anyone who wants to join and learn together
+            as we document how we solved our problems.
           </p>
         </div>
         <Link to="/blogs" style={{ textDecoration: "none", color: "inherit" }}>
@@ -78,21 +78,23 @@ const Blog: React.FC = () => {
             <ModalBody body={moreInfo} closeModalHandler={closeModalHandler} />
           </Modal>
         )}
-        {blogs.map(
-          (
-            blog: { title: string; image: string; text: string },
-            idx: React.Key | null | undefined
-          ) => (
-            <BlogCard
-              key={idx}
-              title={blog.title}
-              image={blog.image}
-              textBody={blog.text}
-              onClick={clickHandler}
-              setMoreInfo={setMoreInfo}
-            />
-          )
-        )}
+        {blogs
+          .slice(0, 4)
+          .map(
+            (
+              blog: { title: string; image: string; text: string },
+              idx: React.Key | null | undefined
+            ) => (
+              <BlogCard
+                key={idx}
+                title={blog.title}
+                image={blog.image}
+                textBody={blog.text}
+                onClick={clickHandler}
+                setMoreInfo={setMoreInfo}
+              />
+            )
+          )}
       </div>
     </div>
   );

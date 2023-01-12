@@ -33,10 +33,17 @@ const Hero: React.FC = () => {
             <h2>Software Developer</h2>
 
             <p>
-              <span> &lt;&gt;</span> <br />
-              &nbsp;&nbsp; Softare Developer <br />
-              &nbsp;&nbsp; Softare Designer <br />
-              <span> &lt;/&gt;</span>
+              <span style={{ color: "red" }}> &lt;&gt;</span> <br />
+              &nbsp;&nbsp; <span style={{ color: "yellow" }}>const </span>{" "}
+              <span>welcomeMessage</span> =()=&gt;&#123; <br />
+              &nbsp; &nbsp; &nbsp;console.log("Hello You!! Welcome To My
+              Portfolio...")
+              <br />
+              &nbsp; &nbsp;&#125;
+              <br /> &nbsp; &nbsp; <span>
+                welcomeMessage()
+              </span> &nbsp;&nbsp; <br />
+              <span style={{ color: "red" }}> &lt;/&gt;</span>
             </p>
           </div>
           <div className="media-links">

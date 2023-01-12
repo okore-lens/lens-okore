@@ -48,7 +48,7 @@ const BackgroundCard: React.FC<BackgroundCardProps> = ({
         </ul>
         {/* Accomplishments */}
         <div className="accomplishments">
-          <h4>Key Moments</h4>
+          <h4>Topics</h4>
           <ul>
             {keyPoints.map(
               (point: string, idx: React.Key | null | undefined) => (

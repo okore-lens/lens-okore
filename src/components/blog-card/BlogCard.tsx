@@ -35,7 +35,7 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
       {/* Title */}
       <h2>{props.title}</h2>
       {/* body */}
-      <p>
+      <p style={{ fontSize: "0.8em" }}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
         inventore eos aspernatur repellendus voluptatibus?
       </p>

@@ -65,8 +65,8 @@ const Project: React.FC = () => {
         <div className="title">
           <h1>Featured Projects</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dicta
-            tenetur doloremque aut error, porro, obcaecati, uae.
+            Take a look at some of the projects that I have put my hands on.
+            From designing the wireframes to bringing life to the wireframes.
           </p>
         </div>
         <Link
@@ -83,7 +83,7 @@ const Project: React.FC = () => {
       </div>
       {/* Project Cards */}
       <div className="projects-wrapper">
-        {projs.map(
+        {projs.slice(0, 4).map(
           (
             proj: {
               stack: [];
