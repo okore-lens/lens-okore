@@ -33,48 +33,27 @@
       }
     }
     .title-station {
-      width: 100%;
-      display: flex;
-      // justify-content: space-around;
-      align-items: center;
+      margin-top: 0.2em;
       h3 {
         margin: 0;
-        color: #bd1b1b;
-      }
-      .icon {
-        margin: 0.7em;
+        color: #ff0000;
       }
       h5 {
         color: #585858;
+        margin: 0.2em 0;
       }
     }
     .accomplishments {
+      h4 {
+        color: #ff0000;
+      }
       ul {
         list-style: square;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 0 0.5em 0;
         li {
-          margin: 0.3em 0;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .background-card {
-    .right {
-      .timeline {
-        h3 {
-          font-size: 0.7em;
-        }
-      }
-      .title-station {
-        flex-direction: column;
-        height: max-content;
-        align-items: flex-start;
-        .icon {
-          display: none;
+          margin: 0.3em 0 0 0;
         }
       }
     }

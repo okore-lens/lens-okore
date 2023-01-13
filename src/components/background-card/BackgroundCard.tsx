@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 import "./backgroundcard.scss";
@@ -37,7 +35,6 @@ const BackgroundCard: React.FC<BackgroundCardProps> = ({
         {/* Title and Station*/}
         <div className="title-station">
           <h3>{title} </h3>
-          <FontAwesomeIcon className="icon" icon={faArrowRight} />
           <h5>{institution}</h5>
         </div>
         {/* Description */}
