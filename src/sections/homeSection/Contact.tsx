@@ -7,9 +7,6 @@ import {
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import Button from "../../components/button/Button";
-import emailjs from "@emailjs/browser";
 import { send } from "emailjs-com";
 
 const Contact: React.FC = () => {
