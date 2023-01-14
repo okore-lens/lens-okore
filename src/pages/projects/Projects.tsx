@@ -40,6 +40,8 @@ const Projects: React.FC = () => {
           image: responseData[key].image,
           bodyText: responseData[key].text,
           stack: responseData[key].languagesList,
+          websiteUrl: responseData[key].websiteUrl,
+          githubUrl: responseData[key].githubUrl,
         });
       }
       setProjs(loadedProjs);
@@ -71,13 +73,15 @@ const Projects: React.FC = () => {
                 title: string;
                 text: string;
                 image: string;
+                githubUrl: string;
+                websiteUrl: string;
               },
               idx: React.Key | null | undefined
             ) => (
               <ProjectCard
                 key={idx}
-                githubUrl="hello"
-                websiteUrl="website"
+                githubUrl={proj.githubUrl}
+                websiteUrl={proj.websiteUrl}
                 stack={proj.stack}
                 title={proj.title}
                 bodyText={proj.text}

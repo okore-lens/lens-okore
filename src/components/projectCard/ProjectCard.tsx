@@ -4,6 +4,7 @@ import React, { Dispatch, SetStateAction } from "react";
 
 import {
   faAngular,
+  faGithub,
   faHtml5,
   faJs,
   faNodeJs,
@@ -33,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
       image: props.image,
       stack: props.stack,
     });
-    props.showModalHandler();
+    // props.showModalHandler();
   };
 
   return (
@@ -56,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
               {props.title}
             </a>
             <a href={props.githubUrl} target="_blank">
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>

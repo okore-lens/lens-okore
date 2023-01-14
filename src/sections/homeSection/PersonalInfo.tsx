@@ -124,12 +124,18 @@ const PersonalInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      <Button
-        className="button"
-        text="Download Resume"
-        click={clickHandler}
-        buttonIcon={faDochub}
-      />
+      <a
+        href="src/assets/Resume.pdf"
+        download
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <Button
+          className="button"
+          text="Download Resume"
+          click={clickHandler}
+          buttonIcon={faDochub}
+        />
+      </a>
     </div>
   );
 };

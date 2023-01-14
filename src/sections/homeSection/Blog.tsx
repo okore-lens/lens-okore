@@ -1,4 +1,6 @@
-import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
+import { faBook, faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BlogCard from "../../components/blog-card/BlogCard";
@@ -62,40 +64,65 @@ const Blog: React.FC = () => {
             as we document how we solved our problems.
           </p>
         </div>
-        <Link to="/blogs" style={{ textDecoration: "none", color: "inherit" }}>
-          <Button
-            className="button"
-            click={() => console.log("clicked")}
-            buttonIcon={faBook}
-            text="View All"
-          />
-        </Link>
+        {blogs.length < 1 ? (
+          ""
+        ) : (
+          <Link
+            to="/blogs"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <Button
+              className="button"
+              click={() => console.log("clicked")}
+              buttonIcon={faBook}
+              text="View All"
+            />
+          </Link>
+        )}
       </div>
 
-      <div className="blog-wrapper">
-        {showModal && (
-          <Modal onClose={closeModalHandler}>
-            <ModalBody body={moreInfo} closeModalHandler={closeModalHandler} />
-          </Modal>
-        )}
-        {blogs
-          .slice(0, 4)
-          .map(
-            (
-              blog: { title: string; image: string; text: string },
-              idx: React.Key | null | undefined
-            ) => (
-              <BlogCard
-                key={idx}
-                title={blog.title}
-                image={blog.image}
-                textBody={blog.text}
-                onClick={clickHandler}
-                setMoreInfo={setMoreInfo}
+      {blogs.length < 1 ? (
+        <h1 style={{ textAlign: "center" }}>
+          Working On It{" "}
+          <FontAwesomeIcon
+            style={{
+              marginLeft: "1.3em",
+              color: "red",
+              fontSize: "0.8em",
+              rotate: "40deg",
+            }}
+            icon={faSpaceAwesome}
+          />
+        </h1>
+      ) : (
+        <div className="blog-wrapper">
+          {showModal && (
+            <Modal onClose={closeModalHandler}>
+              <ModalBody
+                body={moreInfo}
+                closeModalHandler={closeModalHandler}
               />
-            )
+            </Modal>
           )}
-      </div>
+          {blogs
+            .slice(0, 4)
+            .map(
+              (
+                blog: { title: string; image: string; bodyText: string },
+                idx: React.Key | null | undefined
+              ) => (
+                <BlogCard
+                  key={idx}
+                  title={blog.title}
+                  image={blog.image}
+                  textBody={blog.bodyText}
+                  onClick={clickHandler}
+                  setMoreInfo={setMoreInfo}
+                />
+              )
+            )}
+        </div>
+      )}
     </div>
   );
 };

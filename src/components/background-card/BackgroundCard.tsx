@@ -29,7 +29,7 @@ const BackgroundCard: React.FC<BackgroundCardProps> = ({
         {/* Timeline */}
         <div className="timeline">
           <h3>
-            {startDate} - {endDate}
+            {startDate} - {endDate || "Present"}
           </h3>
         </div>
         {/* Title and Station*/}
@@ -45,7 +45,7 @@ const BackgroundCard: React.FC<BackgroundCardProps> = ({
         </ul>
         {/* Accomplishments */}
         <div className="accomplishments">
-          <h4>Topics</h4>
+          <h4>Achievements</h4>
           <ul>
             {keyPoints.map(
               (point: string, idx: React.Key | null | undefined) => (

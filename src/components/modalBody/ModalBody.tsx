@@ -38,11 +38,7 @@ const ModalBody: React.FC<ModalBodyProps> = (props) => {
             ))}
           </div>
         </div>
-        <p>{text}</p>
-        <p>{text}</p>
-        <p>{text}</p>
-        <p>{text}</p>
-        <p>{text}</p>
+        <p>{props.body.bodyText}</p>
       </div>
       <Button
         className="button"
