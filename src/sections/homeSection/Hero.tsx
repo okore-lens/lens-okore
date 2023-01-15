@@ -9,14 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Hero: React.FC = () => {
-  // function truncate(str: string, n: number) {
-  //   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  // }
-
-  const aboutClickHandler = () => {
-    console.log("Clicked!");
-  };
-
   return (
     <section className="Hero">
       <div className="wrapper">

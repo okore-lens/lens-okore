@@ -1,17 +1,6 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDochub,
-  faReact,
-  faAngular,
-  faJs,
-  faHtml5,
-  faSass,
-  faPhp,
-  faNodeJs,
-  faNode,
-} from "@fortawesome/free-brands-svg-icons";
+import { faDochub } from "@fortawesome/free-brands-svg-icons";
 
 import Button from "../../components/button/Button";
 import { Icon } from "@iconify/react";
@@ -28,16 +17,11 @@ const PersonalInfo: React.FC = () => {
         <li className="list-item">
           <span className="title">Name :: </span>Lens Okore
         </li>
-        {/* <li className="list-item">
-          <span className="title">Surname :: </span> Okore
-        </li> */}
+
         <li className="list-item">
           <span className="title">Email :: </span>
           okorelens27@gmail.com
         </li>
-        {/* <li className="list-item">
-          <span className="title">Age :: </span>20
-        </li> */}
         <li className="list-item">
           <span className="title">Address :: </span> Nairobi,Kenya
         </li>

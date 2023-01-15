@@ -15,7 +15,7 @@ const WorkArray: Array<WorkItemProps> = [
   {
     title: "Web Development",
     description:
-      "Highly responsive and scallable web appliations that use new technologies",
+      "Highly responsive and scalable web appliations that use new technologies",
     icon: faCode,
   },
   {

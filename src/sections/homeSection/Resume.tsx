@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BackgroundCard from "../../components/background-card/BackgroundCard";
 
-import Button from "../../components/button/Button";
 import PersonalInfo from "./PersonalInfo";
 import Wakatime from "./Wakatime";
 

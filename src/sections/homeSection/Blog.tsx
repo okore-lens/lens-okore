@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import BlogCard from "../../components/blog-card/BlogCard";
 import Button from "../../components/button/Button";
 import ModalBody from "../../components/modalBody/ModalBody";
-import blogArray from "../../data/blog";
 import Modal from "../../UI/Modal";
 
 const Blog: React.FC = () => {
@@ -83,7 +82,7 @@ const Blog: React.FC = () => {
 
       {blogs.length < 1 ? (
         <h1 style={{ textAlign: "center" }}>
-          Working On It{" "}
+          Working On It
           <FontAwesomeIcon
             style={{
               marginLeft: "1.3em",

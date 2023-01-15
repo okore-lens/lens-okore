@@ -1,9 +1,9 @@
-import { faMultiply } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icon } from "@iconify/react";
 import React from "react";
+
+import { faMultiply } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from "@iconify/react";
+
 import Button from "../button/Button";
-import text from "../../data/text";
 
 import "./modalbody.scss";
 
