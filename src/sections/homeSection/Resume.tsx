@@ -29,7 +29,9 @@ const Resume: React.FC = () => {
         });
       }
 
-      setWorkExperience(loadedWorkExperience);
+      const reversed = loadedWorkExperience.reverse();
+
+      setWorkExperience(reversed);
     } catch (err) {
       console.log(err);
     }
@@ -56,7 +58,8 @@ const Resume: React.FC = () => {
         });
       }
 
-      setEducation(loadedEducation);
+      const reversed = loadedEducation.reverse();
+      setEducation(reversed);
     } catch (err) {
       console.log(err);
     }
@@ -81,56 +84,52 @@ const Resume: React.FC = () => {
         <div className="experience">
           <h1>Experience</h1>
           {workExperience.length >= 1 &&
-            workExperience
-              .reverse()
-              .map(
-                (exp: {
-                  id: string;
-                  title: string;
-                  institution: string;
-                  about: Array<string>;
-                  startDate: string;
-                  endDate: string;
-                  keyPoints: Array<string>;
-                }) => (
-                  <BackgroundCard
-                    key={exp.id}
-                    title={exp.title}
-                    institution={exp.institution}
-                    about={exp.about}
-                    startDate={exp.startDate}
-                    endDate={exp.endDate}
-                    keyPoints={exp.keyPoints}
-                  />
-                )
-              )}
+            workExperience.map(
+              (exp: {
+                id: string;
+                title: string;
+                institution: string;
+                about: Array<string>;
+                startDate: string;
+                endDate: string;
+                keyPoints: Array<string>;
+              }) => (
+                <BackgroundCard
+                  key={exp.id}
+                  title={exp.title}
+                  institution={exp.institution}
+                  about={exp.about}
+                  startDate={exp.startDate}
+                  endDate={exp.endDate}
+                  keyPoints={exp.keyPoints}
+                />
+              )
+            )}
         </div>
         <div className="Education">
           <h1>Education</h1>
           {education.length >= 1 &&
-            education
-              .reverse()
-              .map(
-                (edu: {
-                  id: string;
-                  title: string;
-                  institution: string;
-                  about: Array<string>;
-                  startDate: string;
-                  endDate: string;
-                  keyPoints: Array<string>;
-                }) => (
-                  <BackgroundCard
-                    key={edu.id}
-                    title={edu.title}
-                    institution={edu.institution}
-                    about={edu.about}
-                    startDate={edu.startDate}
-                    endDate={edu.endDate}
-                    keyPoints={edu.keyPoints}
-                  />
-                )
-              )}
+            education.map(
+              (edu: {
+                id: string;
+                title: string;
+                institution: string;
+                about: Array<string>;
+                startDate: string;
+                endDate: string;
+                keyPoints: Array<string>;
+              }) => (
+                <BackgroundCard
+                  key={edu.id}
+                  title={edu.title}
+                  institution={edu.institution}
+                  about={edu.about}
+                  startDate={edu.startDate}
+                  endDate={edu.endDate}
+                  keyPoints={edu.keyPoints}
+                />
+              )
+            )}
         </div>
       </section>
     </div>
