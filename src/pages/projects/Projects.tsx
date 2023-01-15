@@ -90,6 +90,84 @@ const Projects: React.FC = () => {
                 setShowModal={setProjectInfo}
               />
             )
+          )}{" "}
+        {projs.length > 0 &&
+          projs.map(
+            (
+              proj: {
+                stack: [];
+                title: string;
+                text: string;
+                image: string;
+                githubUrl: string;
+                websiteUrl: string;
+              },
+              idx: React.Key | null | undefined
+            ) => (
+              <ProjectCard
+                key={idx}
+                githubUrl={proj.githubUrl}
+                websiteUrl={proj.websiteUrl}
+                stack={proj.stack}
+                title={proj.title}
+                bodyText={proj.text}
+                image={proj.image}
+                showModalHandler={showModalHandler}
+                setShowModal={setProjectInfo}
+              />
+            )
+          )}{" "}
+        {projs.length > 0 &&
+          projs.map(
+            (
+              proj: {
+                stack: [];
+                title: string;
+                text: string;
+                image: string;
+                githubUrl: string;
+                websiteUrl: string;
+              },
+              idx: React.Key | null | undefined
+            ) => (
+              <ProjectCard
+                key={idx}
+                githubUrl={proj.githubUrl}
+                websiteUrl={proj.websiteUrl}
+                stack={proj.stack}
+                title={proj.title}
+                bodyText={proj.text}
+                image={proj.image}
+                showModalHandler={showModalHandler}
+                setShowModal={setProjectInfo}
+              />
+            )
+          )}{" "}
+        {projs.length > 0 &&
+          projs.map(
+            (
+              proj: {
+                stack: [];
+                title: string;
+                text: string;
+                image: string;
+                githubUrl: string;
+                websiteUrl: string;
+              },
+              idx: React.Key | null | undefined
+            ) => (
+              <ProjectCard
+                key={idx}
+                githubUrl={proj.githubUrl}
+                websiteUrl={proj.websiteUrl}
+                stack={proj.stack}
+                title={proj.title}
+                bodyText={proj.text}
+                image={proj.image}
+                showModalHandler={showModalHandler}
+                setShowModal={setProjectInfo}
+              />
+            )
           )}
       </div>
     </div>
