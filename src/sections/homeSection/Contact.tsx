@@ -46,12 +46,8 @@ const Contact: React.FC = () => {
           <p>Don't Be Shy!</p>
           <h4>Let's Work On Your Next Project</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            officiis consequuntur ab, repudiandae, rem officia tempore debitis
-            reiciendis veritatis, quisquam labore amet. Fugit, autem ipsam quod
-            tempora, corporis exercitationem et sed accusamus tenetur, dolorem
-            ab cupiditate sequi officiis odio libero placeat provident quia ad
-            hic.
+            Feel free to ask any question or better still resuest for a feature
+            for your next big project
           </p>
           <div className="SocialCardWrappers">
             <section className="SocialCard">
