@@ -109,7 +109,7 @@ const PersonalInfo: React.FC = () => {
         </div>
       </div>
       <a
-        href="src/assets/Resume.pdf"
+        href="src/assets/Okore.pdf"
         download
         style={{ textDecoration: "none", color: "inherit" }}
       >
