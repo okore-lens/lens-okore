@@ -11,17 +11,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .smallSquare {
-      background-position: center center;
-      background-size: cover;
+    a {
       width: 80%;
       height: 70%;
-      box-shadow: 0 0 10px 10px #000000;
-      transition: transform 1s;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
+      .smallSquare {
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px 10px #000000;
+        transition: transform 1s;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
       }
     }
   }

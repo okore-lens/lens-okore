@@ -41,11 +41,13 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     <div className="ProjectCard">
       {/* Square Section has a smaller square with an image */}
       <section className="bigSquare">
-        <div
-          onClick={clickHandler}
-          className="smallSquare"
-          style={{ backgroundImage: `url(${props.image})` }}
-        ></div>
+        <a href={props.websiteUrl} target="_blank">
+          <div
+            // onClick={clickHandler}
+            className="smallSquare"
+            style={{ backgroundImage: `url(${props.image})` }}
+          ></div>
+        </a>
       </section>
       <section className="bottomCard">
         <div className="left">
